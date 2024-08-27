@@ -1,0 +1,61 @@
+.newsletter-signup {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.newsletter-signup h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.newsletter-signup h3 {
+  font-size: 2rem;
+  margin: 30px 0 20px;
+}
+
+.newsletter-signup ul {
+  list-style: none;
+  padding: 0;
+}
+
+.newsletter-signup ul li {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.newsletter-signup ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.newsletter-signup form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.newsletter-signup input[type='email'] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  margin-right: 10px;
+}
+
+.newsletter-signup button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+  background-color: #0056b3;
+}

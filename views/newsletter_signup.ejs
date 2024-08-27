@@ -1,0 +1,10 @@
+<%- include('layout', { title: 'Newsletter Signup', body: `
+<h2>Signup for Our Newsletter</h2>
+<form action="/newsletter-signup" method="POST">
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" name="email" required />
+  </div>
+  <button type="submit" class="btn btn-primary">Signup</button>
+</form>
+` }) %>
