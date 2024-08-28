@@ -1,3 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Carousel */
+
+#myCarousel .carousel-item {
+  height: 30rem;
+}
+
+#myCarousel .carousel-item .carousel-caption {
+  z-index: 10;
+  bottom: 8rem;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* Newsletter */
+
 .newsletter-signup {
   background-color: #f9f9f9;
   padding: 50px 20px;
