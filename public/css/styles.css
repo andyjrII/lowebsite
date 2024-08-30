@@ -195,6 +195,10 @@ span.badge {
   background-color: #0056b3;
 }
 
+.map-box {
+  width: 90%;
+}
+
 /* Footer */
 
 .footer {
