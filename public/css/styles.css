@@ -57,6 +57,7 @@ li.nav-item:hover {
 
 #myCarousel .carousel-item {
   height: 30rem;
+  border-top: 2px solid #ffd700;
 }
 
 #myCarousel .carousel-item .carousel-caption {
@@ -69,17 +70,7 @@ li.nav-item:hover {
 }
 
 .bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
+  height: 100%;
 }
 
 /* Header */
