@@ -7,7 +7,6 @@ router.get('/about', (req, res) => res.render('about'));
 router.get('/bio', (req, res) => res.render('bio'));
 router.get('/books', (req, res) => res.render('books'));
 router.get('/company', (req, res) => res.render('company'));
-router.get('/mission', (req, res) => res.render('mission'));
 router.get('/blog', (req, res) => res.render('blog'));
 router.get('/contact', (req, res) => res.render('contact'));
 router.post('/newsletter-signup', (req, res) => {
