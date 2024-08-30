@@ -1,0 +1,276 @@
+<%- include('layout', { title: 'Contact us', body: `
+<header class="py-3 header-bg">
+  <div class="container">
+    <div class="text-center my-3">
+      <p class="h1">
+        <span class="badge">GET IN TOUCH</span>
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- Contact Form Accordion -->
+<div class="accordion mx-auto my-4" id="contact-accordion">
+  <!-- Business Inquiries -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#business-panel"
+        aria-expanded="true"
+        aria-controls="business-panel"
+      >
+        Business Inquiries
+        <a href="mailto:layo@ithriveonwisdom.com" class="email-icon">
+          <i class="bi bi-envelope-fill"></i> layo@ithriveonwisdom.com
+        </a>
+      </button>
+    </h2>
+    <div id="business-panel" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <form
+          action="mailto:layo@ithriveonwisdom.com"
+          method="post"
+          enctype="text/plain"
+          class="needs-validation"
+          novalidate
+        >
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="full_name_1" class="form-label">Full Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="full_name_1"
+                name="full_name"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email_1" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email_1"
+                name="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="phone_number_1" class="form-label"
+                >Phone Number:</label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="phone_number_1"
+                name="phone_number"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="subject_1" class="form-label">Subject:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject_1"
+                name="subject"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message_1" class="form-label">Message:</label>
+            <textarea
+              class="form-control"
+              id="message_1"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Books -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#books-panel"
+        aria-expanded="false"
+        aria-controls="books-panel"
+      >
+        Books
+        <a href="mailto:layo@ithriveonwisdom.com" class="email-icon">
+          <i class="bi bi-envelope-fill"></i> layo@ithriveonwisdom.com
+        </a>
+      </button>
+    </h2>
+    <div id="books-panel" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <form
+          action="mailto:layo@ithriveonwisdom.com"
+          method="post"
+          enctype="text/plain"
+          class="needs-validation"
+          novalidate
+        >
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="full_name_2" class="form-label">Full Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="full_name_2"
+                name="full_name"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email_2" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email_2"
+                name="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="phone_number_2" class="form-label"
+                >Phone Number:</label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="phone_number_2"
+                name="phone_number"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="subject_2" class="form-label">Subject:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject_2"
+                name="subject"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message_2" class="form-label">Message:</label>
+            <textarea
+              class="form-control"
+              id="message_2"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Permissions & Rights -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#permissions-panel"
+        aria-expanded="false"
+        aria-controls="permissions-panel"
+      >
+        Permissions & Rights
+        <a href="mailto:aalawsng@gmail.com" class="email-icon">
+          <i class="bi bi-envelope-fill"></i> aalawsng@gmail.com
+        </a>
+      </button>
+    </h2>
+    <div id="permissions-panel" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <form
+          action="mailto:aalawsng@gmail.com"
+          method="post"
+          enctype="text/plain"
+          class="needs-validation"
+          novalidate
+        >
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="full_name_3" class="form-label">Full Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="full_name_3"
+                name="full_name"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="email_3" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email_3"
+                name="email"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="phone_number_3" class="form-label"
+                >Phone Number:</label
+              >
+              <input
+                type="tel"
+                class="form-control"
+                id="phone_number_3"
+                name="phone_number"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="subject_3" class="form-label">Subject:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="subject_3"
+                name="subject"
+                required
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="message_3" class="form-label">Message:</label>
+            <textarea
+              class="form-control"
+              id="message_3"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+` }) %>
