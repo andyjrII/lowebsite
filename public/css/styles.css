@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #000232;
+  --secondary-color: #ffd700;
+}
+
 html,
 body {
   height: 100%;
@@ -11,7 +16,7 @@ body {
   min-height: 100vh;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #000232;
+  color: var(--primary-color);
   background-color: #f4f4f4;
 }
 
@@ -27,47 +32,47 @@ main {
 
 h1,
 h2 {
-  color: #000232;
+  color: var(--primary-color);
 }
 
 /* Colors */
 
 .gold {
-  color: #ffd700;
+  color: var(--secondary-color);
 }
 
 .bg-gold {
-  background-color: #ffd700;
+  background-color: var(--secondary-color);
 }
 
 .navy {
-  color: #000232;
+  color: var(--primary-color);
 }
 
 .bg-navy {
-  background-color: #000232;
+  background-color: var(--primary-color);
 }
 
 /* Navigation */
 
 a.nav-link {
-  color: #ffd700;
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
 a.nav-link:hover {
-  color: #000232;
+  color: var(--primary-color);
 }
 
 li.nav-item:hover {
-  background-color: #ffd700;
+  background-color: var(--secondary-color);
 }
 
 /* Carousel */
 
 #myCarousel .carousel-item {
   height: 30rem;
-  border-top: 2px solid #ffd700;
+  border-top: 2px solid var(--secondary-color);
 }
 
 #myCarousel .carousel-item .carousel-caption {
@@ -86,16 +91,16 @@ li.nav-item:hover {
 /* Header */
 
 header {
-  border-top: 2px solid #ffd700;
+  border-top: 2px solid var(--secondary-color);
 }
 
 .header-bg {
-  background-color: #000232;
+  background-color: var(--primary-color);
 }
 
 span.badge {
-  color: #000232;
-  background-color: #ffd700;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 /* Accordion */
@@ -106,38 +111,38 @@ span.badge {
 }
 
 .accordion-button {
-  background-color: #000232;
+  background-color: var(--primary-color);
   color: #ffd700;
 }
 .accordion-button:not(.collapsed) {
-  background-color: #000232;
-  color: #ffd700;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .accordion-button:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
 }
 .form-label {
-  color: #000232;
+  color: var(--primary-color);
 }
 .form-control:focus {
-  border-color: #ffd700;
+  border-color: var(--secondary-color);
   box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
 }
 .btn-primary {
-  background-color: #000232;
-  border-color: #000232;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 .btn-primary:hover {
-  background-color: #ffd700;
-  border-color: #ffd700;
-  color: #000232;
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .email-icon {
   position: absolute;
   right: 3rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #ffd700;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
@@ -218,16 +223,17 @@ span.badge {
 }
 
 .hero {
-  background-color: #000232;
+  background-color: var(--primary-color);
   color: #fff;
   text-align: center;
   padding: 40px 20px;
   margin-bottom: 30px;
 }
 .hero h1 {
-  color: #ffd700;
+  color: var(--secondary-color);
   margin-bottom: 10px;
 }
+
 .section {
   background-color: #fff;
   border-radius: 8px;
@@ -235,14 +241,15 @@ span.badge {
   margin-bottom: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .value-item {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
+
 .value-icon {
-  background-color: #ffd700;
-  color: #000232;
+  background-color: var(--primary-color);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -252,10 +259,11 @@ span.badge {
   margin-right: 15px;
   font-size: 20px;
 }
+
 .cta-button {
   display: inline-block;
-  background-color: #ffd700;
-  color: #000232;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 5px;
@@ -265,14 +273,128 @@ span.badge {
 .cta-button:hover {
   background-color: #e6c200;
 }
-.image-placeholder {
-  background-color: #ddd;
-  height: 200px;
+
+.founder-img,
+.mission-img {
+  background-color: var(--primary-color);
+  height: 300px;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
   border-radius: 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.founder-img {
+  background-image: url('../images/boardmeeting.jpg');
+}
+
+.mission-img {
+  background-image: url('../images/3-people.jpg');
+}
+
+/* Bio Page */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+h1 {
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  font-style: italic;
+}
+
+.profile-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.profile-image {
+  flex: 1;
+  min-width: 120px;
+  max-width: 180px;
+  margin-right: 2rem;
+}
+
+.profile-image img {
+  height: 15rem;
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid var(--secondary-color);
+}
+.profile-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.section h2 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.skill-item {
+  background-color: var(--secondary-color);
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.book-item {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.quote {
+  font-style: italic;
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+  }
+  .profile-image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
 }
 
 /* Footer */
@@ -290,7 +412,7 @@ span.badge {
 .footer .footer-link {
   margin-left: 5px;
   margin-right: 5px;
-  color: #ffd700;
+  color: var(--secondary-color);
   text-decoration: none;
 }
 
