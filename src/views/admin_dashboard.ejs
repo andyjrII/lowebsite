@@ -1,0 +1,22 @@
+<h1>Admin Dashboard</h1>
+<h2>Newsletter Subscriptions</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Email</th>
+      <th>Subscribed At</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% subscriptions.forEach(subscription => { %>
+    <tr>
+      <td><%= subscription.id %></td>
+      <td><%= subscription.email %></td>
+      <td><%= subscription.createdAt %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<a href="/admin/logout">Logout</a>
