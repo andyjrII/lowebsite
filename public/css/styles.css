@@ -58,6 +58,8 @@ h2 {
 a.nav-link {
   color: var(--secondary-color);
   font-weight: bold;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 a.nav-link:hover {
