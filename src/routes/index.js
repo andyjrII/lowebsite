@@ -12,7 +12,6 @@ router.get('/contact', (req, res) => res.render('contact'));
 router.get('/testimonials', (req, res) => res.render('testimonials'));
 router.get('/privacy-policy', (req, res) => res.render('privacy_policy'));
 router.get('/terms-of-use', (req, res) => res.render('terms_of_use'));
-router.get('/privacy-policy', (req, res) => res.render('privacy_policy'));
 router.get('/copyright', (req, res) => res.render('copyright'));
 
 module.exports = router;
