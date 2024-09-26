@@ -72,25 +72,73 @@ li.nav-item:hover {
 
 /* Home Page */
 
-.map-box {
-  width: 90%;
+.name-up,
+.name-down {
+  font-size: 8rem;
+  margin: 0;
+  line-height: 1;
 }
 
-#myCarousel .carousel-item {
-  height: 30rem;
+.name-up {
+  color: #f7dc6f;
+}
+
+.name-down {
+  color: #f7d2c4;
+}
+
+.bd-placeholder-img,
+.header-container {
+  padding: 0;
+  margin: 0;
+}
+
+.header-container {
+  height: 33rem;
   border-top: 2px solid var(--secondary-color);
-}
-
-#myCarousel .carousel-item .carousel-caption {
-  bottom: 8rem;
-}
-
-.carousel {
-  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .bd-placeholder-img {
+  align-self: flex-end;
   height: 100%;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 0 0 30px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column; /* Stack the text and image vertically */
+    justify-content: flex-start;
+    height: auto; /* Adjust height for small screens */
+    padding: 20px;
+  }
+  .name-up,
+  .name-down {
+    font-size: 4rem; /* Decrease font size for smaller screens */
+  }
+
+  .bd-placeholder-img {
+    max-width: 100%; /* Ensure image is responsive */
+    align-self: center; /* Center the image on smaller screens */
+    margin-top: 10px; /* Add space between text and image */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .bd-placeholder-img {
+    max-width: 100%; /* Keep the image responsive for very small screens */
+  }
 }
 
 .newsletter-signup {
@@ -243,6 +291,7 @@ span.badge {
 .form-label {
   color: var(--primary-color);
 }
+
 .form-control:focus {
   border-color: var(--secondary-color);
   box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
@@ -251,6 +300,7 @@ span.badge {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
+
 .btn-primary:hover {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -264,6 +314,10 @@ span.badge {
   transform: translateY(-50%);
   color: var(--secondary-color);
   text-decoration: none;
+}
+
+.map-box {
+  width: 90%;
 }
 
 iframe {
