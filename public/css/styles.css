@@ -94,7 +94,7 @@ li.nav-item:hover {
 }
 
 .header-container {
-  height: 33rem;
+  height: 40rem;
   border-top: 2px solid var(--secondary-color);
   display: flex;
   justify-content: space-between;
@@ -217,6 +217,7 @@ li.nav-item:hover {
 .featured-products {
   margin-top: 40px;
 }
+
 .featured-products h2 {
   color: var(--primary-color);
   font-size: 28px;
@@ -226,13 +227,13 @@ li.nav-item:hover {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 100px;
+  grid-gap: 80px;
   margin: 50px 100px;
 }
 
 .product-card img {
   width: 100%;
-  height: 120px;
+  height: 150px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
@@ -274,13 +275,16 @@ span.badge {
   background-color: var(--primary-color);
   color: #ffd700;
 }
+
 .accordion-button:not(.collapsed) {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
+
 .accordion-button:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
 }
+
 .form-label {
   color: var(--primary-color);
 }
@@ -289,6 +293,7 @@ span.badge {
   border-color: var(--secondary-color);
   box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
 }
+
 .btn-primary {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
@@ -332,7 +337,7 @@ iframe {
 /* About Us */
 
 .container-about {
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
@@ -344,17 +349,33 @@ iframe {
   padding: 40px 20px;
   margin-bottom: 30px;
 }
+
 .hero h1 {
   color: var(--secondary-color);
   margin-bottom: 10px;
 }
 
-.section {
+.about-title {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.about-section {
   background-color: #fff;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.about-section p,
+.about-section li {
+  font-size: 1.2rem;
 }
 
 .value-item {
@@ -385,29 +406,13 @@ iframe {
   font-weight: bold;
   transition: background-color 0.3s;
 }
+
 .cta-button:hover {
   background-color: #e6c200;
 }
 
-.founder-img,
-.mission-img {
-  background-color: var(--primary-color);
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.founder-img {
-  background-image: url('../images/boardmeeting.jpg');
-}
-
-.mission-img {
-  background-image: url('../images/3-people.jpg');
+.about-img {
+  width: 100%;
 }
 
 /* Bio Page */
@@ -420,20 +425,32 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
+
 header {
   background-color: var(--primary-color);
   color: white;
   text-align: center;
   padding: 1rem;
 }
+
+.section {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 h1 {
   margin-bottom: 0.5rem;
 }
+
 .subtitle {
   font-style: italic;
 }
@@ -467,12 +484,14 @@ h1 {
   border-bottom: 2px solid var(--secondary-color);
   padding-bottom: 0.5rem;
 }
+
 .skills {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
 }
+
 .skill-item {
   background-color: var(--secondary-color);
   color: #333;
