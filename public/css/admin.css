@@ -2,6 +2,42 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+h2 {
+  font-weight: 700;
+  color: #343a40;
+}
+
+/* Login */
+
+.login-container {
+  max-width: 300px;
+  margin: auto; /* Center the form */
+  padding: 20px; /* Padding around the form */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  background-color: white; /* White background for the form */
+}
+
+.login-container .form-label {
+  font-weight: bold; /* Bold labels */
+}
+
+.login-container .btn-primary {
+  width: 100%; /* Full width button */
+}
+
+/* Nav */
+
+.nav-link {
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dashboard */
+
 .card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -33,11 +69,6 @@ body {
 }
 
 /* Subscribers */
-
-h2 {
-  font-weight: 700;
-  color: #343a40;
-}
 
 .table {
   font-size: 1rem;

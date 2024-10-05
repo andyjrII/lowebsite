@@ -1,12 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const SubscriptionController = require('../controllers/SubscriptionController');
+const BookController = require('../controllers/BookController');
 
 // Route definitions for each page
 router.get('/', (req, res) => res.render('home'));
 router.get('/about', (req, res) => res.render('about'));
 router.get('/bio', (req, res) => res.render('bio'));
-router.get('/books', (req, res) => res.render('books'));
+router.get('/books', BookController.getBooks);
 router.get('/organisations', (req, res) => res.render('organisations'));
 router.get('/blog', (req, res) => res.render('blog'));
 router.get('/contact', (req, res) => res.render('contact'));
