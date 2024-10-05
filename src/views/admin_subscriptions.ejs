@@ -1,0 +1,19 @@
+<%- include('admin_layout', { title: 'Subscribers', body: `
+<h2>All Subscribers</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Subscription Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% subscribers.forEach(subscriber => { %>
+    <tr>
+      <td><%= subscriber.email %></td>
+      <td><%= new Date(subscriber.createdAt).toLocaleString() %></td>
+    </tr>
+    <% }) %>
+  </tbody>
+</table>
+`}) %>

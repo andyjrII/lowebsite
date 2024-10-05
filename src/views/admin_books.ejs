@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../partials/adminHead', {title: "All Books"}) %>
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4">Admin Dashboard</h1>
+      <div class="btn-group" role="group">
+        <a href="#" class="btn btn-outline-primary">Books</a>
+        <a href="/admin" class="btn btn-outline-primary">Newsletter</a>
+      </div>
+      <h2 class="mb-4">Newsletter Subscriptions</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Subscribed At</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% subscriptions.forEach(subscription => { %>
+          <tr>
+            <td><%= subscription.id %></td>
+            <td><%= subscription.email %></td>
+            <td><%= new Date(subscription.createdAt).toLocaleString() %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <a href="/admin/logout" class="btn btn-danger mt-3">Logout</a>
+    </div>
+
+    <%- include('../partials/adminFooter') %>
+  </body>
+</html>

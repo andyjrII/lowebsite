@@ -6,7 +6,6 @@ const session = require('express-session');
 const flash = require('connect-flash');
 const initializePassport = require('./auth/passportConfig');
 const indexRoutes = require('./routes/index');
-const subscriptionRoutes = require('./routes/subscription');
 const adminRoutes = require('./routes/admin');
 
 // Set the view engine to EJS
@@ -42,7 +41,6 @@ app.use((req, res, next) => {
 
 // Use routes from the "routes" directory
 app.use('/', indexRoutes);
-app.use('/subscribe', subscriptionRoutes);
 app.use('/admin', adminRoutes);
 
 // Start the server

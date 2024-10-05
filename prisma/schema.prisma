@@ -24,3 +24,12 @@ model Subscription {
   email     String   @unique
   createdAt DateTime @default(now())
 }
+
+model Book {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  amazonLink  String
+  coverImage  String
+  createdAt   DateTime @default(now())
+}

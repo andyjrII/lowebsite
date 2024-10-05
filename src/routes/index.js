@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+const SubscriptionController = require('../controllers/SubscriptionController');
 
 // Route definitions for each page
 router.get('/', (req, res) => res.render('home'));
@@ -13,5 +14,7 @@ router.get('/testimonials', (req, res) => res.render('testimonials'));
 router.get('/privacy-policy', (req, res) => res.render('privacy_policy'));
 router.get('/terms-of-use', (req, res) => res.render('terms_of_use'));
 router.get('/copyright', (req, res) => res.render('copyright'));
+
+router.post('/subscribe', SubscriptionController.createSubscription);
 
 module.exports = router;
