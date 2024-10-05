@@ -11,8 +11,8 @@ exports.getDashboard = async (req, res) => {
 
 // Subscribers
 exports.getSubscriptions = async (req, res) => {
-  const subscriptions = await prisma.subscription.findMany();
-  res.render('admin_subscriptions', { subscriptions });
+  const subscribers = await prisma.subscription.findMany();
+  res.render('admin_subscriptions', { subscribers });
 };
 
 // Books
