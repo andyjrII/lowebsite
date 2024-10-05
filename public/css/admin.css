@@ -57,3 +57,24 @@ h2 {
     font-size: 0.9rem;
   }
 }
+
+/* Books */
+
+.table img {
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.btn-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}

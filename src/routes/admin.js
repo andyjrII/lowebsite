@@ -17,18 +17,33 @@ router.post(
   })
 );
 
+// Subscribers
 router.get('/', ensureAuthenticated, AdminController.getDashboard);
 router.get(
   '/subscribers',
   ensureAuthenticated,
   AdminController.getSubscriptions
 );
+
+// Books
 router.get('/books', ensureAuthenticated, AdminController.getBooks);
 router.get('/books/add', ensureAuthenticated, AdminController.getAddBook);
 router.post(
   '/books/add',
   upload.single('coverImage'),
   AdminController.postAddBook
+);
+router.post(
+  '/books/delete/:id',
+  ensureAuthenticated,
+  AdminController.deleteBook
+);
+router.get('/books/edit/:id', ensureAuthenticated, AdminController.getEditBook);
+router.post(
+  '/books/edit/:id',
+  ensureAuthenticated,
+  upload.single('coverImage'),
+  AdminController.postEditBook
 );
 
 // Logout

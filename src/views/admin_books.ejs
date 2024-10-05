@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('../partials/adminHead', {title: "All Books"}) %>
-  <body>
+  <%- include('partials/adminHead', { title: "Books" }) %>
+  <body class="bg-light">
+    <%- include('partials/adminNav') %>
+
     <div class="container mt-5">
-      <h1 class="mb-4">Admin Dashboard</h1>
-      <div class="btn-group" role="group">
-        <a href="#" class="btn btn-outline-primary">Books</a>
-        <a href="/admin" class="btn btn-outline-primary">Newsletter</a>
-      </div>
-      <h2 class="mb-4">Newsletter Subscriptions</h2>
+      <h2>All Books</h2>
       <table class="table table-striped">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Email</th>
-            <th>Subscribed At</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Amazon Link</th>
+            <th>Cover Image</th>
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
-          <% subscriptions.forEach(subscription => { %>
+          <% books.forEach(book => { %>
           <tr>
-            <td><%= subscription.id %></td>
-            <td><%= subscription.email %></td>
-            <td><%= new Date(subscription.createdAt).toLocaleString() %></td>
+            <td><%= book.title %></td>
+            <td><%= book.description %></td>
+            <td>
+              <a href="<%= book.amazonLink %>" target="_blank">Buy on Amazon</a>
+            </td>
+            <td>
+              <img
+                src="<%= book.coverImage %>"
+                alt="<%= book.title %>"
+                style="width: 50px"
+              />
+            </td>
+            <td>
+              <a
+                href="/admin/books/edit/<%= book.id %>"
+                class="btn btn-warning btn-sm mb-2"
+                >Edit</a
+              >
+              <form
+                action="/admin/books/delete/<%= book.id %>"
+                method="POST"
+                class="d-inline"
+              >
+                <button type="submit" class="btn btn-danger btn-sm">
+                  Delete
+                </button>
+              </form>
+            </td>
           </tr>
           <% }) %>
         </tbody>
       </table>
-      <a href="/admin/logout" class="btn btn-danger mt-3">Logout</a>
+      <a href="/admin/books/add" class="btn btn-primary mt-3">Add New Book</a>
     </div>
 
-    <%- include('../partials/adminFooter') %>
+    <%- include('partials/adminFooter') %>
   </body>
 </html>
