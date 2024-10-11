@@ -2,9 +2,10 @@ const express = require('express');
 const router = express.Router();
 const SubscriptionController = require('../controllers/SubscriptionController');
 const BookController = require('../controllers/BookController');
+const IndexController = require('../controllers/IndexController');
 
 // Route definitions for each page
-router.get('/', (req, res) => res.render('home'));
+router.get('/', IndexController.getLinks);
 router.get('/about', (req, res) => res.render('about'));
 router.get('/bio', (req, res) => res.render('bio'));
 router.get('/books', BookController.getBooks);
