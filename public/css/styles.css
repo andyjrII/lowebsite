@@ -238,6 +238,10 @@ li.nav-item:hover {
   margin-bottom: 10px;
 }
 
+.product-card img:hover {
+  border: 5px solid var(--secondary-color);
+}
+
 .product-card h3 {
   color: var(--primary-color);
   font-size: 20px;
