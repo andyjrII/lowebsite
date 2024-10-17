@@ -37,29 +37,35 @@
         <% books.forEach(book => { %>
         <div class="col-md-4 books">
           <div class="card">
-            <img
-              src="<%= book.coverImage %>"
-              class="card-img-top"
-              alt="<%= book.title %>"
-            />
-            <div class="card-body">
-              <h5 class="card-title"><%= book.title %></h5>
-              <a
-                href="<%= book.amazonLink %>"
-                class="btn btn-primary"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Buy on Amazon</a
-              >
-              <!-- Button to open modal -->
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-toggle="modal"
-                data-bs-target="#modal<%= book.id %>"
-              >
-                View Description
-              </button>
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="<%= book.coverImage %>"
+                  class="card-img-top"
+                  alt="<%= book.title %>"
+                />
+              </div>
+              <div class="col-md-7">
+                <div class="card-body">
+                  <p class="card-title"><%= book.title %></p>
+                  <a
+                    href="<%= book.amazonLink %>"
+                    class="btn btn-primary mb-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Buy on Amazon</a
+                  >
+                  <!-- Button to open modal -->
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal<%= book.id %>"
+                  >
+                    View Description
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -71,11 +77,11 @@
             aria-labelledby="modalLabel<%= book.id %>"
             aria-hidden="true"
           >
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-dialog-scrollable">
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="modalLabel<%= book.id %>">
-                    <%= book.title %> - Description
+                    <%= book.title %>
                   </h5>
                   <button
                     type="button"
@@ -84,9 +90,7 @@
                     aria-label="Close"
                   ></button>
                 </div>
-                <div class="modal-body">
-                  <p><%= book.description %></p>
-                </div>
+                <div class="modal-body"><pre><%= book.description %></pre></div>
               </div>
             </div>
           </div>
