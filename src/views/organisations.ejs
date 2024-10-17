@@ -1,14 +1,494 @@
-<%- include('layout', { title: 'Organisations', body: `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organisations</title>
+    <link rel="icon" href="/images/LO5-nobg.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <%- include('partials/header') %>
 
-<!-- Body -->
-<header class="py-3 header-bg">
-  <div class="container">
-    <div class="text-center my-3">
-      <p class="h1">
-        <span class="badge">ORGANISATIONS</span>
-      </p>
-    </div>
-  </div>
-</header>
+    <main class="wrapper">
+      <header class="py-3 header-bg">
+        <div class="container">
+          <div class="text-center my-3">
+            <p class="h1">
+              <span class="badge">ORGANISATIONS</span>
+            </p>
+          </div>
+        </div>
+      </header>
 
-` }) %>
+      <div class="container org-container">
+        <!-- Thriveon Entrepreneur -->
+        <div class="accordion" id="accordionOrg">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Thriveon Entrepreneur
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#accordionOrg"
+            >
+              <div class="accordion-body">
+                <p>
+                  At ThriveOn, we turn your ideas into thriving ventures. Our
+                  business incubator offers essential support, resources, and
+                  mentorship, empowering entrepreneurs at every stage of their
+                  journey.
+                </p>
+                <p>
+                  Join our vibrant community of passionate individuals dedicated
+                  to transforming ideas into successful businesses. With access
+                  to experienced mentors, networking opportunities, and funding
+                  connections, you’ll have everything you need to succeed.
+                </p>
+                <p>
+                  Whether you’re an established entrepreneur ready to scale or a
+                  startup founder with a bold vision, ThriveOn is here to guide
+                  you every step of the way.
+                </p>
+                <p>
+                  Don’t just dream—achieve with ThriveOn. Start your journey
+                  today and watch your ideas take flight.
+                </p>
+
+                <hr class="" />
+
+                <h4>What ThriveOn Offers:</h4>
+
+                <ul>
+                  <li>Entrepreneurial Empowerment</li>
+                  <li>Non-Profit Advocacy</li>
+                  <li>Startup Support</li>
+                  <li>Social Entrepreneurship Advocacy</li>
+                  <li>Corporate Social Responsibility (CSR) Initiatives</li>
+                  <li>Leadership Development</li>
+                  <li>Business Innovation</li>
+                </ul>
+                <h4>Who Can Join?</h4>
+                <p>
+                  ThriveOn welcomes entrepreneurs from all walks of life, ready
+                  to transform their ideas into impact.
+                </p>
+
+                <p>
+                  Ready to start?<a
+                    class="btn btn-md btn-custom ms-1"
+                    href="https://ithriveonwisdom.com/"
+                    target="_blank"
+                    >Join ThriveOn today!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- God’s Treasury Cooperative Thrift & Credit Society -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                God’s Treasury Cooperative Thrift & Credit Society
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionOrg"
+            >
+              <div class="accordion-body">
+                <p>
+                  The GTCS is a financial community guided by godly principles.
+                  We address socio-economic challenges through mutual support
+                  and income-generating initiatives. Our mission is simple: to
+                  empower individuals and families by improving access to
+                  credit, promoting financial literacy, and fostering a
+                  supportive environment for saving, investing, and
+                  wealth-building.
+                </p>
+                <p>We aim to:</p>
+                <ul>
+                  <li>
+                    Promote financial literacy, helping members make informed
+                    decisions.
+                  </li>
+                  <li>
+                    Expand loan accessibility to meet diverse financial needs.
+                  </li>
+                  <li>
+                    Simplify financial processes for easy, seamless
+                    transactions.
+                  </li>
+                  <li>
+                    Empower members with debt management resources for greater
+                    financial stability.
+                  </li>
+                  <li>
+                    Foster business growth and entrepreneurial opportunities.
+                  </li>
+                  <li>
+                    Encourage responsible investing aligned with ethical
+                    principles.
+                  </li>
+                  <li>Cultivate a supportive, knowledge-sharing community.</li>
+                  <li>
+                    Champion social justice and advocate for fair, equitable
+                    financial practices.
+                  </li>
+                </ul>
+                <h4>Membership</h4>
+                <p>
+                  Anyone globally can join our cooperative. Members must pay a
+                  non-refundable registration fee and commit to a minimum
+                  monthly savings deposit. We welcome all who seek financial
+                  empowerment through a faith-centered community.
+                </p>
+                <p>
+                  Become a part of God’s Treasury Cooperative Thrift & Credit
+                  Society today!<a
+                    class="btn btn-md btn-custom ms-1"
+                    href="https://ithriveonwisdom.com/"
+                    target="_blank"
+                    >Join GTCS today!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spiritual Woman Fellowship -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Spiritual Woman Fellowship
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionOrg"
+            >
+              <div class="accordion-body">
+                <p>
+                  The Spiritual Woman Fellowship is a vibrant community for
+                  women who love God and desire to live a full, impactful life.
+                  Our fellowship brings together women of faith who understand
+                  the transformative power of prayer and are ready to manifest
+                  spiritual realities in every aspect of their lives.
+                </p>
+                <p>
+                  We recognize that as women, we hold a unique spiritual
+                  authority. By embracing our supernatural identity, created in
+                  the likeness of God, we unlock a deeper spiritual dimension.
+                  Through prayer, we connect with our divine purpose and become
+                  powerful agents of change.
+                </p>
+                <p>
+                  Connect with other women who are passionate about prayer and
+                  living in the fullness of God’s love! Let’s walk together in
+                  faith, purpose, and love. Jesus is Lord! Amen.
+                </p>
+                <p>
+                  Connect with us
+                  <a
+                    class="btn btn-md btn-custom ms-1"
+                    href="https://ithriveonwisdom.com/"
+                    target="_blank"
+                    >here!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LOP -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                LOP (Literary Ownership Program)
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionOrg"
+            >
+              <div class="accordion-body">
+                <p>
+                  LOP helps individuals share their stories. We invite anyone
+                  with a passion for writing—whether they see it as a hobby or
+                  possess literary prowess—to articulate their narratives in a
+                  clear and impactful way. We prioritize the importance of
+                  ownership, ensuring that every author retains full rights to
+                  their work. Our mission is to nurture talented writers and
+                  uncover hidden potential within our community. We embrace
+                  values of love, collaboration, and excellence in every project
+                  we undertake.
+                </p>
+                <p>
+                  In a rapidly evolving publishing landscape where traditional
+                  barriers are disappearing, we stand alongside authors seeking
+                  guidance and support while allowing them to maintain creative
+                  control and copyright over their work. Since our inception, we
+                  have proudly contributed to the publication of numerous
+                  exceptional books that resonate with readers around the globe.
+                </p>
+                <p>
+                  Founded out of a passion for storytelling and a commitment to
+                  excellence, LO Publications is driven by visionary leaders
+                  dedicated to transforming the publishing experience. With a
+                  focus on personalized service and quality, we nurture each
+                  project from concept to completion, ensuring that our authors
+                  feel empowered and supported throughout their publishing
+                  journey. Contact Us!
+                </p>
+                <p>
+                  <a
+                    class="btn btn-md btn-custom ms-1"
+                    href="https://ithriveonwisdom.com/"
+                    target="_blank"
+                    >Contact us!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Praisegate Schools -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Praisegate Schools
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionOrg"
+            >
+              <div class="accordion-body">
+                <p>
+                  At Praisegate Schools, we believe that everyone deserves
+                  access to quality education. Our commitment is to provide
+                  comprehensive resources for educators, parents, and learners,
+                  ensuring that all individuals have the tools they need to
+                  succeed.
+                </p>
+                <p>
+                  We understand that education is the cornerstone of personal
+                  and societal growth. That’s why we are dedicated to creating
+                  an inclusive learning environment that nurtures curiosity and
+                  fosters a love for learning. By offering a wide range of
+                  educational resources, we empower teachers to enhance their
+                  teaching methods and support parents in guiding their
+                  children’s educational journeys.
+                </p>
+                <p>
+                  Praisegate Schools is committed to providing high-quality
+                  educational resources and support. We work closely with
+                  educators to develop engaging curricula and effective teaching
+                  strategies. For parents, we offer guidance and tools to help
+                  them actively participate in their children's learning
+                  experiences. And for learners, we create an enriching
+                  environment where they can thrive academically and personally.
+                </p>
+                <p>
+                  If you are a teacher, consider joining our dedicated team that
+                  works tirelessly to make Praisegate Schools a success.
+                  Together, we can inspire and educate the next generation.
+                </p>
+                <p>
+                  As a parent, you’ll have access to a wealth of resources
+                  designed to help you support your children on their learning
+                  journeys. We provide the tools and guidance you need to be an
+                  active participant in their education.
+                </p>
+                <p>
+                  For learners, we offer a variety of resources that cater to
+                  your needs, ensuring you have everything you need to thrive
+                  academically. At Praisegate Schools, we are committed to
+                  empowering everyone in our community to achieve their
+                  educational goals.
+                </p>
+                <p>
+                  Join us today and be part of a community that values education
+                  and personal growth!
+                </p>
+                <p>
+                  <a
+                    class="btn btn-md btn-custom ms-1"
+                    href="https://ithriveonwisdom.com/"
+                    target="_blank"
+                    >Contact us today!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- All About Love -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                All About Love
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionOrg"
+            >
+              <div class="accordion-body">
+                <p>
+                  “All About Love” is a life-changing program designed to
+                  support individuals seeking love and acceptance while
+                  navigating various challenges such as fearful thoughts,
+                  self-sabotage, impostor syndrome, unhealed wounds, and bottled
+                  emotions. We believe that God can guide you on your journey of
+                  love and self-discovery.
+                </p>
+                <p>
+                  We provide the tools and support needed for healing past
+                  wounds, accepting love, and ultimately manifesting a life of
+                  abundance. Through our program, individuals will learn to heal
+                  emotional wounds, overcome self-sabotaging patterns, and
+                  cultivate a mindset of love and acceptance, leading to a more
+                  fulfilling and balanced life.
+                </p>
+                <p>
+                  We offer self-assessments, practical exercises, personalized
+                  coaching, and guidance tailored to meet your unique needs.
+                  With these resources, you can look within to find peace,
+                  foster harmony within yourself, and create infectious energies
+                  of love and abundance.
+                </p>
+                <p>
+                  <a
+                    class="btn btn-md btn-custom ms-1"
+                    href="https://ithriveonwisdom.com/"
+                    target="_blank"
+                    >Enroll Now for Free!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- SimartPlace -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                SimartPlace
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionOrg"
+            >
+              <div class="accordion-body">
+                <p>
+                  The SimartPlace is your go-to destination for discovering and
+                  connecting with local businesses in Nigeria. We bridge the gap
+                  between consumers and the services and products they need
+                  while helping businesses grow and thrive in the digital age.
+                </p>
+                <p>
+                  To become the number one information portal in Africa,
+                  enabling quick and seamless trading between users and sellers.
+                </p>
+                <p>
+                  Experience the convenience of connecting with local businesses
+                  that cater to your needs!
+                </p>
+                <p>
+                  <a
+                    class="btn btn-md btn-custom ms-1"
+                    href="https://ithriveonwisdom.com/"
+                    target="_blank"
+                    >Click here for more!</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <%- include('partials/footer') %>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/421d6e9a59.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

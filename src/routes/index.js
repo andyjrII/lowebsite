@@ -9,7 +9,7 @@ router.get('/', IndexController.getLinks);
 router.get('/about', (req, res) => res.render('about'));
 router.get('/bio', (req, res) => res.render('bio'));
 router.get('/books', BookController.getBooks);
-router.get('/organisations', (req, res) => res.render('organisations'));
+router.get('/organisations', IndexController.getOrgLinks);
 router.get('/blog', (req, res) => res.render('blog'));
 router.get('/contact', (req, res) => res.render('contact'));
 router.get('/testimonials', (req, res) => res.render('testimonials'));
