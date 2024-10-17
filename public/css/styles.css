@@ -478,9 +478,14 @@ h1 {
   border-radius: 50%;
   border: 5px solid var(--secondary-color);
 }
+
 .profile-content {
   flex: 2;
   min-width: 300px;
+}
+
+.profile-content p {
+  font-size: 1.2rem;
 }
 
 .section h2 {
@@ -493,7 +498,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 1rem;
+  margin: 1rem auto;
 }
 
 .skill-item {
