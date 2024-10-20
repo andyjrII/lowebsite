@@ -2,6 +2,7 @@ require('dotenv').config();
 
 exports.getLinks = async (req, res) => {
   res.render('home', {
+    title: 'Home',
     urls: {
       allAboutLove: process.env.ALL_ABOUT_LOVE,
       godsTreasury: process.env.GODS_TREASURY,
@@ -16,6 +17,7 @@ exports.getLinks = async (req, res) => {
 
 exports.getOrgLinks = async (req, res) => {
   res.render('organisations', {
+    title: 'Organisations',
     urls: {
       allAboutLove: process.env.ALL_ABOUT_LOVE,
       godsTreasury: process.env.GODS_TREASURY,

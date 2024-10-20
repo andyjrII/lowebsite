@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg bg-navy">
   <div class="container-fluid">
-    <a class="navbar-brand bg-gold p-2 fw-bold" href="/">Layo Obidike</a>
+    <a class="navbar-brand bg-gold p-2 fw-bold rounded-1" href="/"
+      >Layo Obidike</a
+    >
     <button
       class="navbar-toggler"
       type="button"
@@ -13,18 +15,16 @@
       <span class="navbar-toggler-icon bg-gold"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="/bio">Bio</a></li>
-        <li class="nav-item"><a class="nav-link" href="/books">Books</a></li>
+      <ul class="navbar-nav justify-content-end d-flex">
+        <% navItems.forEach((item) => { %>
         <li class="nav-item">
-          <a class="nav-link" href="/organisations">Organisations</a>
+          <a
+            class="nav-link <%= title === item.title ? 'active' : '' %>"
+            href="<%= item.href %>"
+            ><%= item.title %></a
+          >
         </li>
-        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
+        <% }); %>
       </ul>
     </div>
   </div>

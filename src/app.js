@@ -14,8 +14,22 @@ app.set('views', path.join(__dirname, 'views'));
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, '../public')));
-
 app.use(express.urlencoded({ extended: true }));
+
+const navItems = [
+  { title: 'Home', href: '/' },
+  { title: 'About us', href: '/about' },
+  { title: 'Bio', href: '/bio' },
+  { title: 'Organisations', href: '/organisations' },
+  { title: 'Blog', href: '/blog' },
+  { title: 'Contact us', href: '/contact' },
+];
+
+// Middleware to make navItems available in all views
+app.use((req, res, next) => {
+  res.locals.navItems = navItems;
+  next();
+});
 
 // Passport
 initializePassport(passport);
