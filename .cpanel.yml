@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/layoxpxe/public_html
+    - export DEPLOYPATH=/home/layoxpxe/public_html/app
     - /bin/cp -R /home/layoxpxe/repositories/lowebsite/* $DEPLOYPATH
