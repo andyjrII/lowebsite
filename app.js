@@ -22,6 +22,7 @@ const navItems = [
   { title: 'Bio', href: '/bio' },
   { title: 'Organisations', href: '/organisations' },
   { title: 'Blog', href: '/blog' },
+  { title: 'Books', href: '/books' },
   { title: 'Contact us', href: '/contact' },
 ];
 

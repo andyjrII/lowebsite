@@ -3,5 +3,5 @@ const prisma = new PrismaClient();
 
 exports.getBooks = async (req, res) => {
   const books = await prisma.book.findMany();
-  res.render('books', { books });
+  res.render('books', { title: 'Books', books });
 };
