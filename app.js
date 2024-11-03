@@ -17,7 +17,6 @@ app.use(express.static(path.join(__dirname, './public')));
 app.use(express.urlencoded({ extended: true }));
 
 const navItems = [
-  { title: 'Home', href: '/' },
   { title: 'About us', href: '/about' },
   { title: 'Bio', href: '/bio' },
   { title: 'Organisations', href: '/organisations' },
