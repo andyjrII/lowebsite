@@ -100,6 +100,8 @@ a.nav-link.active {
   font-size: 8rem;
   margin: 0;
   line-height: 1;
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-weight: 600;
 }
 
 .name-up {
@@ -107,7 +109,7 @@ a.nav-link.active {
 }
 
 .name-down {
-  color: #f7d2c4;
+  color: #c4f5f7;
 }
 
 .bd-placeholder-img,
@@ -143,14 +145,15 @@ a.nav-link.active {
 
 @media (max-width: 480px) {
   .header-container {
-    height: 30rem;
+    height: 25rem;
   }
   .name-up,
   .name-down {
     font-size: 3rem;
   }
   .bd-placeholder-img {
-    height: 25rem;
+    height: 20rem;
+    width: 15rem;
   }
 }
 
