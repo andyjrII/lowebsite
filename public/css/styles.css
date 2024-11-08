@@ -140,9 +140,6 @@ a.nav-link.active {
   margin: 0 0 0 30px;
 }
 
-@media (max-width: 768px) {
-}
-
 @media (max-width: 480px) {
   .header-container {
     height: 25rem;
@@ -154,6 +151,19 @@ a.nav-link.active {
   .bd-placeholder-img {
     height: 20rem;
     width: 15rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .name-up,
+  .name-down {
+    font-size: 2rem;
+  }
+  .product-grid {
+    margin-left: -15px !important;
+  }
+  .bio-heading span {
+    margin-left: -30px !important;
   }
 }
 
