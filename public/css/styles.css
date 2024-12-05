@@ -125,6 +125,7 @@ a.nav-link.active {
   justify-content: space-between;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .bd-placeholder-img {
@@ -144,6 +145,9 @@ a.nav-link.active {
   .header-container {
     height: 25rem;
   }
+  .text-container {
+    margin: 0 0 0 15px;
+  }
   .name-up,
   .name-down {
     font-size: 3rem;
@@ -154,10 +158,20 @@ a.nav-link.active {
   }
 }
 
-@media (max-width: 330px) {
+@media (max-width: 360px) {
+  .header-container {
+    height: 20rem;
+  }
+  .text-container {
+    margin: 0 0 0 10px;
+  }
   .name-up,
   .name-down {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .bd-placeholder-img {
+    height: 16rem;
+    width: 11rem;
   }
   .product-grid {
     margin-left: -15px !important;
@@ -617,7 +631,7 @@ h1 {
 }
 
 pre {
-  white-space: pre-wrap; /* Maintain text formatting and allow text to wrap */
+  white-space: pre-wrap;
   overflow-x: auto; /* Enable horizontal scrolling */
   word-wrap: break-word; /* Ensure words break when they reach the end of the container */
   max-width: 100%; /* Ensure the pre element doesn’t exceed the container’s width */
